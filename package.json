@@ -1,0 +1,17 @@
+{
+  "name": "system-design-blueprint",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:architecture": "depcruise --config .dependency-cruiser.js packages apps",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "test:unit": "turbo run test:unit"
+  },
+  "devDependencies": {
+    "dependency-cruiser": "^16.0.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
